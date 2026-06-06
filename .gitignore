@@ -1,0 +1,8 @@
+node_modules/
+dist/
+package-lock.json
+*.tsbuildinfo
+vite.config.d.ts
+vite.config.js
+.env
+.env.local
