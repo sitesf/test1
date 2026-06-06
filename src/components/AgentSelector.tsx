@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { AgentCard } from './AgentCard';
-import { Arrow } from 'lucide-react';
 
 interface Agent {
   id: string;
@@ -72,7 +71,7 @@ export function AgentSelector() {
 
       {/* Agent Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-        {agents.map((agent, index) => (
+        {agents.map((agent) => (
           <AgentCard
             key={agent.id}
             {...agent}
